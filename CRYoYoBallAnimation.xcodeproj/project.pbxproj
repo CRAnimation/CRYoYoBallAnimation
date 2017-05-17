@@ -10,9 +10,10 @@
 		0999B8D11ECCA46E00D9F241 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0999B8D01ECCA46E00D9F241 /* main.m */; };
 		0999B8D41ECCA46E00D9F241 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0999B8D31ECCA46E00D9F241 /* AppDelegate.m */; };
 		0999B8D71ECCA46E00D9F241 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0999B8D61ECCA46E00D9F241 /* ViewController.m */; };
-		0999B8DA1ECCA46E00D9F241 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0999B8D81ECCA46E00D9F241 /* Main.storyboard */; };
 		0999B8DC1ECCA46F00D9F241 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0999B8DB1ECCA46F00D9F241 /* Assets.xcassets */; };
 		0999B8DF1ECCA46F00D9F241 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0999B8DD1ECCA46F00D9F241 /* LaunchScreen.storyboard */; };
+		0999B8E81ECCA80200D9F241 /* YoYoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0999B8E71ECCA80200D9F241 /* YoYoView.m */; };
+		E29521C7C8CFD1AF6EAA648E /* libPods-CRYoYoBallAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCD0DEBF046B200D8DA6D715 /* libPods-CRYoYoBallAnimation.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +23,14 @@
 		0999B8D31ECCA46E00D9F241 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0999B8D51ECCA46E00D9F241 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0999B8D61ECCA46E00D9F241 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0999B8D91ECCA46E00D9F241 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0999B8DB1ECCA46F00D9F241 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0999B8DE1ECCA46F00D9F241 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0999B8E01ECCA46F00D9F241 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0999B8E61ECCA80200D9F241 /* YoYoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YoYoView.h; sourceTree = "<group>"; };
+		0999B8E71ECCA80200D9F241 /* YoYoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YoYoView.m; sourceTree = "<group>"; };
+		275B6ADB5F3BF7B9E40BF7EA /* Pods-CRYoYoBallAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRYoYoBallAnimation.release.xcconfig"; path = "Pods/Target Support Files/Pods-CRYoYoBallAnimation/Pods-CRYoYoBallAnimation.release.xcconfig"; sourceTree = "<group>"; };
+		88F21C60553999BBDEE19AC7 /* Pods-CRYoYoBallAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRYoYoBallAnimation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CRYoYoBallAnimation/Pods-CRYoYoBallAnimation.debug.xcconfig"; sourceTree = "<group>"; };
+		CCD0DEBF046B200D8DA6D715 /* libPods-CRYoYoBallAnimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CRYoYoBallAnimation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E29521C7C8CFD1AF6EAA648E /* libPods-CRYoYoBallAnimation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,8 @@
 			children = (
 				0999B8CE1ECCA46E00D9F241 /* CRYoYoBallAnimation */,
 				0999B8CD1ECCA46E00D9F241 /* Products */,
+				2147B89E7495940594040E36 /* Pods */,
+				1CED3C2E19B29B21DC876030 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,7 +70,8 @@
 				0999B8D31ECCA46E00D9F241 /* AppDelegate.m */,
 				0999B8D51ECCA46E00D9F241 /* ViewController.h */,
 				0999B8D61ECCA46E00D9F241 /* ViewController.m */,
-				0999B8D81ECCA46E00D9F241 /* Main.storyboard */,
+				0999B8E61ECCA80200D9F241 /* YoYoView.h */,
+				0999B8E71ECCA80200D9F241 /* YoYoView.m */,
 				0999B8DB1ECCA46F00D9F241 /* Assets.xcassets */,
 				0999B8DD1ECCA46F00D9F241 /* LaunchScreen.storyboard */,
 				0999B8E01ECCA46F00D9F241 /* Info.plist */,
@@ -79,6 +88,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1CED3C2E19B29B21DC876030 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCD0DEBF046B200D8DA6D715 /* libPods-CRYoYoBallAnimation.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2147B89E7495940594040E36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88F21C60553999BBDEE19AC7 /* Pods-CRYoYoBallAnimation.debug.xcconfig */,
+				275B6ADB5F3BF7B9E40BF7EA /* Pods-CRYoYoBallAnimation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +112,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0999B8E31ECCA46F00D9F241 /* Build configuration list for PBXNativeTarget "CRYoYoBallAnimation" */;
 			buildPhases = (
+				EA4B22B7A1CEAB81D417CB24 /* [CP] Check Pods Manifest.lock */,
 				0999B8C81ECCA46E00D9F241 /* Sources */,
 				0999B8C91ECCA46E00D9F241 /* Frameworks */,
 				0999B8CA1ECCA46E00D9F241 /* Resources */,
+				5304F843C5BBF1722E21BFDA /* [CP] Embed Pods Frameworks */,
+				A260B33CC590D8EC04F20772 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,17 +169,65 @@
 			files = (
 				0999B8DF1ECCA46F00D9F241 /* LaunchScreen.storyboard in Resources */,
 				0999B8DC1ECCA46F00D9F241 /* Assets.xcassets in Resources */,
-				0999B8DA1ECCA46E00D9F241 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5304F843C5BBF1722E21BFDA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CRYoYoBallAnimation/Pods-CRYoYoBallAnimation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A260B33CC590D8EC04F20772 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CRYoYoBallAnimation/Pods-CRYoYoBallAnimation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA4B22B7A1CEAB81D417CB24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0999B8C81ECCA46E00D9F241 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0999B8E81ECCA80200D9F241 /* YoYoView.m in Sources */,
 				0999B8D71ECCA46E00D9F241 /* ViewController.m in Sources */,
 				0999B8D41ECCA46E00D9F241 /* AppDelegate.m in Sources */,
 				0999B8D11ECCA46E00D9F241 /* main.m in Sources */,
@@ -160,14 +237,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0999B8D81ECCA46E00D9F241 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0999B8D91ECCA46E00D9F241 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0999B8DD1ECCA46F00D9F241 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -273,10 +342,12 @@
 		};
 		0999B8E41ECCA46F00D9F241 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88F21C60553999BBDEE19AC7 /* Pods-CRYoYoBallAnimation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VT6HKJNGDV;
 				INFOPLIST_FILE = CRYoYoBallAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Bear.CRYoYoBallAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -285,10 +356,12 @@
 		};
 		0999B8E51ECCA46F00D9F241 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 275B6ADB5F3BF7B9E40BF7EA /* Pods-CRYoYoBallAnimation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VT6HKJNGDV;
 				INFOPLIST_FILE = CRYoYoBallAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Bear.CRYoYoBallAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -314,6 +387,7 @@
 				0999B8E51ECCA46F00D9F241 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
