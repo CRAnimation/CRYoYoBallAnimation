@@ -29,6 +29,7 @@
     
     if (self) {
         [self createUI];
+        [self startAnimation];
     }
     
     return self;
@@ -55,14 +56,39 @@
     
     _ballContentLayer = [CAShapeLayer layer];
     _ballContentLayer.frame = CGRectMake(0, 0, ballContentLayerWidth, ballContentLayerWidth);
+    //_ballContentLayer.borderWidth = 1;
+    //_ballContentLayer.borderColor = [UIColor greenColor].CGColor;
     _ballContentLayer.position = CGPointMake(self.width / 2.0, self.height / 2.0);
     [self.layer addSublayer:_ballContentLayer];
     
-    _ringLayer = [CAShapeLayer layer];
-    _ringLayer.frame = CGRectMake(ballContentLayerWidth / 2.0, 0, 2 * ballLayerRadius, 2 * ballLayerRadius);
-    _ringLayer.cornerRadius = ballLayerRadius;
-    _ringLayer.backgroundColor = color_00E480.CGColor;
-    [_ballContentLayer addSublayer:_ringLayer];
+    [self initRotate];
+    
+    _ballLayer = [CAShapeLayer layer];
+    _ballLayer.frame = CGRectMake(0, 0, 2 * ballLayerRadius, 2 * ballLayerRadius);
+    _ballLayer.cornerRadius = ballLayerRadius;
+    _ballLayer.backgroundColor = color_00E480.CGColor;
+    _ballLayer.position = CGPointMake(ballContentLayerWidth / 2.0, 0);
+    [_ballContentLayer addSublayer:_ballLayer];
+}
+
+- (void)initRotate
+{
+    CGAffineTransform transform = CGAffineTransformMakeRotation(M_PI_2 / 2.0);
+    _ballContentLayer.affineTransform = transform;
+}
+
+- (void)startAnimation
+{
+    CAMediaTimingFunction *timingFunction = [CAMediaTimingFunction functionWithControlPoints:0.75 :0.23 :0.15 :0.78];
+    
+    CABasicAnimation *animation = [CABasicAnimation animation];
+    animation.keyPath = @"transform.rotation";
+    animation.duration = 2.5
+    ;
+    animation.repeatCount = INFINITY;
+    animation.byValue = @(M_PI * 2);
+    animation.timingFunction = timingFunction;
+    [_ballContentLayer addAnimation:animation forKey:animation.keyPath];
 }
 
 @end
