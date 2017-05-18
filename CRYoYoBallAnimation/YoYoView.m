@@ -79,7 +79,7 @@
 
 - (void)startAnimation
 {
-    CAMediaTimingFunction *timingFunction = [CAMediaTimingFunction functionWithControlPoints:0.75 :0.23 :0.15 :0.78];
+    CAMediaTimingFunction *timingFunction = [CAMediaTimingFunction functionWithControlPoints:0.79 :0.14 :0.13 :0.83];
     
     CABasicAnimation *animation = [CABasicAnimation animation];
     animation.keyPath = @"transform.rotation";
