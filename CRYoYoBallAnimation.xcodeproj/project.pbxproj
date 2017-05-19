@@ -13,6 +13,7 @@
 		0999B8DC1ECCA46F00D9F241 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0999B8DB1ECCA46F00D9F241 /* Assets.xcassets */; };
 		0999B8DF1ECCA46F00D9F241 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0999B8DD1ECCA46F00D9F241 /* LaunchScreen.storyboard */; };
 		0999B8E81ECCA80200D9F241 /* YoYoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0999B8E71ECCA80200D9F241 /* YoYoView.m */; };
+		0999B8F01ECE7D2600D9F241 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0999B8EF1ECE7D2600D9F241 /* README.md */; };
 		E29521C7C8CFD1AF6EAA648E /* libPods-CRYoYoBallAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCD0DEBF046B200D8DA6D715 /* libPods-CRYoYoBallAnimation.a */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		0999B8E01ECCA46F00D9F241 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0999B8E61ECCA80200D9F241 /* YoYoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YoYoView.h; sourceTree = "<group>"; };
 		0999B8E71ECCA80200D9F241 /* YoYoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YoYoView.m; sourceTree = "<group>"; };
+		0999B8EF1ECE7D2600D9F241 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		275B6ADB5F3BF7B9E40BF7EA /* Pods-CRYoYoBallAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRYoYoBallAnimation.release.xcconfig"; path = "Pods/Target Support Files/Pods-CRYoYoBallAnimation/Pods-CRYoYoBallAnimation.release.xcconfig"; sourceTree = "<group>"; };
 		88F21C60553999BBDEE19AC7 /* Pods-CRYoYoBallAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRYoYoBallAnimation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CRYoYoBallAnimation/Pods-CRYoYoBallAnimation.debug.xcconfig"; sourceTree = "<group>"; };
 		CCD0DEBF046B200D8DA6D715 /* libPods-CRYoYoBallAnimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CRYoYoBallAnimation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +50,7 @@
 		0999B8C31ECCA46E00D9F241 = {
 			isa = PBXGroup;
 			children = (
+				0999B8EF1ECE7D2600D9F241 /* README.md */,
 				0999B8CE1ECCA46E00D9F241 /* CRYoYoBallAnimation */,
 				0999B8CD1ECCA46E00D9F241 /* Products */,
 				2147B89E7495940594040E36 /* Pods */,
@@ -229,6 +232,7 @@
 			files = (
 				0999B8E81ECCA80200D9F241 /* YoYoView.m in Sources */,
 				0999B8D71ECCA46E00D9F241 /* ViewController.m in Sources */,
+				0999B8F01ECE7D2600D9F241 /* README.md in Sources */,
 				0999B8D41ECCA46E00D9F241 /* AppDelegate.m in Sources */,
 				0999B8D11ECCA46E00D9F241 /* main.m in Sources */,
 			);
