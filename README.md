@@ -1,7 +1,3 @@
-> 欢迎同样喜爱动效的你加入<br>
-iOS动效特攻队–>QQ群：547897182 <br>
-iOS动效特攻队–>熊熊：648070256<br>
-CRAnimation开源项目：[https://github.com/CRAnimation/CRAnimation](https://github.com/CRAnimation/CRAnimation)<br>
 
 ## gitHub：[https://github.com/CRAnimation/CRYoYoBallAnimation](https://github.com/CRAnimation/CRYoYoBallAnimation)
 
